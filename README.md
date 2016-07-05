@@ -9,7 +9,7 @@ A simple blog written and developed by Lrtwjhs.
 - Using bootstrap framework.
 
 ##INSTALL
-1. First, import the portal.sql script into Mysql
+1. First, import the db_blog.sql script into Mysql
 2. Second, copy the Blog/WebRoot file into your webapps subdirectory of your tomcat installation (Mine is at /usr/local/tomcat/webapps)
 3. Restart Tomcat 
 4. Go to http://localhost:8080/blog/,You should see a Title, a footer and a rather empty page..You need to add an author and actual content
