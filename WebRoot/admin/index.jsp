@@ -1,42 +1,71 @@
-<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+﻿<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>管理员登录</title>
-<link href="Css/Style.css" rel="stylesheet" type="text/css" />
-</head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon"> 
+    <title>Login</title>
+    <!-- Bootstrap core CSS -->
+    <link href="style/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="style/signin.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css"/>
+<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="../css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
+<link href="../css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+<link href="../css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../css/theme-light.css" rel="stylesheet" type="text/css"/>
 
-<body><br /><div id="LoginTop">
-	<div class="BarLeft"></div>
-    <div id="LoginTopText">管理员登录</div>
-    <div class="BarRight"></div>
-    <div class="Cal"></div>
-</div>
-<form id="AdminLogin" name="AdminLogin" method="post" action="validate.jsp">
-<div id="LoginBox">
-    <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
-        <tr>
-          <td height="25">&nbsp;</td>
-          <td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td height="35" align="right" class="FontWeight">用户名：</td>
-          <td><input name="userid" type="text" class="Input" id="userid" /></td>
-      </tr>
-        <tr>
-          <td height="35" align="right" class="FontWeight">密码：</td>
-          <td><input name="passwd" type="password" class="Input" id="passwd" /></td>
-        </tr>
-        <tr>
-          <td height="10" colspan="2" align="center"></td>
-      </tr>
-        <tr>
-            <td height="40" colspan="2" align="center"><input name="Submits" type="submit" class="Button" id="Submits" value="登录" style="background-color: rgb(0, 255, 0);color: black"/>              &nbsp;&nbsp;<input name="ReSet" type="reset" class="Button" id="ReSet" value="重置" style="background-color: rgb(0, 255, 0);color: black"/></td>
-        </tr>
-    </table>
-</div>
-</form>
-</body>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery.tagcloud.js"></script>
+<script src="../js/npm.js"></script>
+
+<link rel="icon" href="favicon.ico" type="image/x-icon"> 
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    <div class="abc"></div>
+     <%@include file="nav.jsp"%>
+
+    <div class="container">
+	       <h2 class="form-signin-heading">Admin Signin</h2>
+         <p></p>
+         <p></p>
+         <p></p>
+         <p></p>
+     
+        <div class="cow">
+        <div class="col-md-4 col-md-offset-4 login-container">
+        <div class="login-panel">
+        <form class="signin-form" method="poster" action="validate.jsp">       
+        <input name="userid" type="text"  class="form-control" placeholder="Username" >
+        <input name="passwd" type="password" class="form-control" placeholder="Password" >
+        <button class="button btn btn-primary btn-block" type="submit">Login</button>
+         </form>
+         </div>
+         </div>
+         </div>
+ </div> 
+       
+   
+
+<%@include file="../bottom.jsp" %>  
+
+  </body>
 </html>
+

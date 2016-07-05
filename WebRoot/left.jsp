@@ -26,13 +26,13 @@
 <div id="sidebar">
 		<ul>
 			<li>
-				<h2>文章分类<br /></h2>
+				<h3>文章分类<br /></h3>
 				<ul>
 					<%=sort_con %>
 				</ul>
 			</li>
 			<li>
-				<h2>友情链接</h2>
+				<h3>友情链接</h3>
 				<ul>
 					<%=link_con %>
 				</ul>

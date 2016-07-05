@@ -22,7 +22,7 @@
   while(it.hasNext()){
      Feedback  l = (Feedback)it.next();
      list_con += "<tr align='center'  height='25'><td>"+l.getId()+"</td><td>"+l.getArticleid()+"</td><td>"+l.getUname()+"</td><td>"
-              +l.getIp()+"</td><td>"+l.getPubtime()+"</td> <td> <a href='/BlogVer1_0/link?action=delete&id="+l.getId()+"' >删除</a> </td></tr> \n";
+              +l.getIp()+"</td><td>"+l.getPubtime()+"</td> <td> <a href='/Blog/link?action=delete&id="+l.getId()+"' >删除</a> </td></tr> \n";
     // System.out.println(list_con);
   }
   total = new Integer(dao.getTotal()).toString();

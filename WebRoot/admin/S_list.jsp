@@ -9,7 +9,7 @@
   while(it.hasNext()){
      Sort  l = (Sort)it.next();
       list_con += "<tr align='center'  height='25'><td>"+l.getId()+"</td><td>"+l.getBlogid()+"</td><td>"+l.getName()
-               +"</td><td><a href='S_update.jsp?id="+l.getId()+"'>修改</a> | <a href='/BlogVer1_0/sort?action=delete&id="+l.getId()+"' >删除</a> </td></tr> \n";
+               +"</td><td><a href='S_update.jsp?id="+l.getId()+"'>修改</a> | <a href='/Blog/sort?action=delete&id="+l.getId()+"' >删除</a> </td></tr> \n";
     // System.out.println(list_con);
   }
   

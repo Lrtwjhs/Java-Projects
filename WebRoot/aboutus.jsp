@@ -1,44 +1,66 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>关于本站_红色玫瑰</title>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About·Lrtwjhs</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<%@include file="head.jsp"  %>
 </head>
 <body>
-<div id="wrapper">
-<!-- start header -->
-<div id="header">
-	<h1>红色玫瑰 </h1>
-	<p>Red Roses </p>
-</div>
-<!-- end header -->
-<%@include file="dh.jsp"  %>
-<!-- start page -->
-<div id="page">
-	<!-- start content -->
-	<div id="content">
-		<div class="post">
-			<h1 class="title">关于本站</h1>
-			<p class="byline"><small>Posted on August 25th, 2007 by <a href="#">admin</a> | <a href="#">Edit</a></small></p>
-			<div class="entry">
+<%@include file="nav.jsp"%>
+<div class="cdf"></div>
+<div class="container">
+    <div class="post">
+        <div class="about">
+			<p><h2>About</h2></p>
+			<p class="byline"><small> some thing about me.</a>  </small></p>
+			</div>
+	    
+	    <div class="content">
 				<p> 
-				   博客的标题的得来还是很想了一下，在想的过程中，看自己想的也太多，所以何不简单一点呢？就叫简单生活好了。诚然我们在生活中过的也太复杂，太辛苦，所以在网络上简单一点也好，尽管可能被人骂，被人看不起。如果有人觉得我的博客不好，但愿也只有指教而不是漫骂。
+				  这个网站是基于JSP和HTML5开发，是今年学习JSP Web开发的结课项目，主要使用的技术为：
+				  <ul>
+				  <li>JSP + Severlet + javabean</li>
+				  <li>Mysql作为数据库</li>
+				  <li>多说作为评论系统</li>
+				  <li>HTML5为标签语言</li>
+				  <li>Bootstrap作为前端框架</li>
+				  </ul>
+				  由于时间原因，仅完成大致结构，很多细节还未很好改进，后续的优化我将在我的<a href="https://github.com/Lrtwjhs/JavaWeb">Github</a>上进行持续更新........
                 </p>
-			</div>			
-		</div>		
-	</div>
-	<!-- end content -->
-	<!-- start sidebar -->
-	<%@include file="left.jsp" %>
-	<!-- end sidebar -->
+        </div>
+
+   </br>
+   </br>
+
+   <!-- 多说评论框 start -->
+  <div class="ds-thread" data-thread-key="" data-title="" data-url="请替换成文章的网址"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"javawebtest"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+<!-- 多说公共JS代码 end -->
+	    
+	</div>     
 </div>
-</div>
-<!-- end page -->
+
+
+<div class="yw"></div>
 <%@include file="bottom.jsp" %>
 </body>
 </html>

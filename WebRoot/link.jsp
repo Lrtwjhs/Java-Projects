@@ -39,43 +39,27 @@
   part_msg = "共"+total+"条数据，分"+totalpage+"页，当前为第"+current+"页 <a href='link.jsp?pg="+up+"'> 上一页</a> <a href='link.jsp?pg="+down+"'>下一页 </a>";
   
 %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>友情链接_红色玫瑰</title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tags·Lrtwjhs</title>
+<%@include file="head.jsp"  %>
 </head>
 <body>
-<div id="wrapper">
+<%@include file="nav.jsp"  %>
+<div class="container">
 <!-- start header -->
-<div id="header">
-	<h1>红色玫瑰 </h1>
-	<p>Red Roses </p>
-</div>
 <!-- end header -->
-<%@include file="dh.jsp"  %>
+
 <!-- start page -->
-<div id="page">
-	<!-- start content -->
-	<div id="content">
-		<div class="post">
-			<h1 class="title">友情链接</h1>			
-			<div class="entry">
-				<p> 
-				 <%=list_con %>				
-                </p>
-                <p class="meta"><%=part_msg  %></p>
-			</div>			
-		</div>		
-	</div>
 	<!-- end content -->
 	<!-- start sidebar -->
 	<%@include file="left.jsp" %>
 	<!-- end sidebar -->
-</div>
+
 </div>
 <!-- end page -->
 <%@include file="bottom.jsp" %>

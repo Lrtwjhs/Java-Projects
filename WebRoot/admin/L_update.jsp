@@ -21,7 +21,7 @@
   </head>
   
   <body>
-      <form  action="/BlogVer1_0/link" method="post">
+      <form  action="/Blog/link" method="post">
        <table width="100%" cellpadding="0" class="Table1" bordercolor="#4ab902" border="1" cellspacing="0">
         <tr>
           <td height="25" align="right">网站名称：<input  type="hidden" id="id" name="id" value="<%=id %>" >

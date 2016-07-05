@@ -24,10 +24,10 @@
   while(ita.hasNext()){
      Article  l = (Article)ita.next();
      type_str = l.getSort();
-     list_con +=  "<h2 class=\"title\"><a href='show_art.jsp?id="+l.getId()+"'>"+l.getTitle()+"</a></h2>"
+     list_con +=  "<h3 class=\"title\"><a href='show_art.jsp?id="+l.getId()+"'>"+l.getTitle()+"</a></h3>"
 			   +" <p class=\"byline\"><small>日期:"+l.getPubtime()+" </small></p>"
 		       +" <div class=\"entry\"> "
-			   +"<blockquote><p>&#8220;"+l.getContent()+" &#8221;</p></blockquote></div>";				
+			   ;				
   }
   
   total = new Integer(dao.getTotal()).toString();
@@ -49,42 +49,47 @@
   part_msg = "共"+total+"条数据，分"+totalpage+"页，当前为第"+current+"页 <a href='main.jsp?cid="+cid+"&pg="+up+"'> 上一页</a> <a href='main.jsp?cid="+cid+"&pg="+down+"'>下一页 </a>";
   
 %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title><%=type_str %>_红色玫瑰</title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title><%=type_str %>·Lrtwjhs</title>
+
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <body>
-<div id="wrapper">
-<!-- start header -->
-<div id="header">
-	<h1>红色玫瑰 </h1>
-	<p>Red Roses </p>
-</div>
-<!-- end header -->
-<%@include file="dh.jsp"  %>
+<%@include file="nav.jsp"  %>
+<div class="cdf"></div>
+<div class="container">
+
 <!-- start page -->
 <div id="page">
 	<!-- start content -->
 	<div id="content">
 		<div class="post">
-		   <p class="meta"><a href="main.jsp?cid=<%=cid %>" class="more"><%=type_str  %></a></p>
-			<%=list_con  %>
+    <div class="about" style="font-size:9px;">
+      <h3><%=type_str %></h3>
+      </br>
+
+			<%=list_con %>
 			<p class="meta"><%=part_msg  %></p>
 		</div>
 	</div>
 	<!-- end content -->
-	<!-- start sidebar -->
-	<%@include file="left.jsp" %>
-	<!-- end sidebar -->
 </div>
 </div>
 <!-- end page -->
-<%@include file="bottom.jsp" %>
+
+</br>
+
+<div class="footer">
+<div class="footer-wrapper">
+<hr>
+  <p>&copy;2016 All Rights Reserved &nbsp;&&nbsp; Design by <a href="https://github.com/Lrtwjhs">Lrtwjhs</a>.</p>
+</div>
+</div>
 
 </body>
 </html>

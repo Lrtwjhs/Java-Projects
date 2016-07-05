@@ -46,7 +46,7 @@
   
 <body>
   
-    <form  action="/BlogVer1_0/article" method="post">
+    <form  action="/Blog/article" method="post">
        <table width="100%" cellpadding="0" class="Table1" bordercolor="#4ab902" border="1" cellspacing="0">
         <tr>
           <td height="25" width="100" align="right">标题：

@@ -23,7 +23,7 @@
   while(it.hasNext()){
      Link  l = (Link)it.next();
      list_con += "<tr align='center'  height='25'><td>"+l.getId()+"</td><td>"+l.getBlogid()+"</td><td>"+l.getName()+"</td><td>"
-              +l.getUrl()+"</td> <td><a href='L_update.jsp?id="+l.getId()+"'>修改</a> | <a href='/BlogVer1_0/link?action=delete&id="+l.getId()+"' >删除</a> </td></tr> \n";
+              +l.getUrl()+"</td> <td><a href='L_update.jsp?id="+l.getId()+"'>修改</a> | <a href='/Blog/link?action=delete&id="+l.getId()+"' >删除</a> </td></tr> \n";
     // System.out.println(list_con);
   }
   total = new Integer(dao.getTotal()).toString();

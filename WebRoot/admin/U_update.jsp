@@ -27,7 +27,7 @@
   
   <body>
   
-    <form  action="/BlogVer1_0/user?action=update" method="post">
+    <form  action="/Blog/user?action=update" method="post">
        <table width="100%" cellpadding="0" class="Table1" bordercolor="#4ab902" border="1" cellspacing="0">
         <tr>
           <td height="25" align="right">用户名：

@@ -35,47 +35,74 @@
    
  %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title><%=title %>_红色玫瑰</title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Article·Lrtwjhs</title>
+
 <script type="text/javascript" src="nicEdit.js"></script>
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript">
 	bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
 </script>
-
+<%@include file="head.jsp"  %>
 </head>
 <body>
-<div id="wrapper">
-<!-- start header -->
-<div id="header">
-	<h1>红色玫瑰 </h1>
-	<p>Red Roses </p>
-</div>
-<!-- end header -->
-<%@include file="dh.jsp"  %>
+<%@include file="nav.jsp"  %>
+<div class="cdf"></div>
+<div class="container">
+
 <!-- start page -->
 <div id="page">
 	<!-- start content -->
 	<div id="content">
 		<div class="post">	
+    <div class="about">
 			<h2 class="title"><%=title %></h2>
-			<p class="byline"><small><%=time %> </small></p>
-			<div class="entry">
+			<p class="byline"><small><%=time %> </small><small>by   admin</small></p>
+			</div>
 				<p> <%=content %></p>				
-			</div>					
-			 <p class="meta"><a href="#" class="more">网友评论</a></p>	
+				
+      </br>
+      </br>
+
+<!-- 多说评论框 start -->
+  <div class="ds-thread" data-thread-key="" data-title="<%=title %>" data-url=""></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"javawebtest"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+<!-- 多说公共JS代码 end -->
+
+			</div> 	
 		</div>
-		
+    </div>
+		<!-- end page -->
+</div>
+
+
+
+
+    <!--注释原评论>
 		<div class="post">	
+    <p class="meta"><a href="#" class="more">网友评论</a></p>
 		     <%=list_con %>						
-			 <p class="meta"><a href="#" class="more"> 发布评论</a></p>	
+			 	
 		</div>
 		  <div class="post">	
+      <p class="meta"><a href="#" class="more"> 发布评论</a></p>
 		       <div class="entry">
 				  <p>
 	     <form  action="feedback" method="post"> 
@@ -94,14 +121,11 @@
 			   </div>	
 			</div>				
 	</div>
-	<!-- end content -->
-	
-	<!-- start sidebar -->
-	<%@include file="left.jsp" %>
-	<!-- end sidebar -->
+
 </div>
-</div>
-<!-- end page -->
+ -->
+
+<div class="yw"></div>
 <%@include file="bottom.jsp" %>
  
 </body>

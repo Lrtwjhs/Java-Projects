@@ -22,7 +22,7 @@
   while(it.hasNext()){
      User  l = (User)it.next();
      list_con += "<tr align='center'  height='25'><td>"+l.getId()+"</td><td>"+l.getUsername()+"</td><td>"+l.getPassword()+"</td><td>"
-              +l.getEmail()+"</td><td>"+l.getSubject()+"</td> <td><a href='U_update.jsp?id="+l.getId()+"'>修改</a> | <a href='/BlogVer1_0/user?action=delete&id="+l.getId()+"' >删除</a> </td></tr> \n";
+              +l.getEmail()+"</td><td>"+l.getSubject()+"</td> <td><a href='U_update.jsp?id="+l.getId()+"'>修改</a> | <a href='/Blog/user?action=delete&id="+l.getId()+"' >删除</a> </td></tr> \n";
     // System.out.println(list_con);
   }
   total = new Integer(dao.getTotal()).toString();
