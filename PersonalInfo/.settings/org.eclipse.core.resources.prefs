@@ -1,0 +1,14 @@
+eclipse.preferences.version=1
+encoding//src/com/personalinfo/dao/ContactDao.java=UTF-8
+encoding//src/com/personalinfo/dao/DiaryDao.java=UTF-8
+encoding//src/com/personalinfo/dao/FinanceDao.java=UTF-8
+encoding//src/com/personalinfo/dao/MemorandumDao.java=UTF-8
+encoding//src/com/personalinfo/dao/UserDao.java=UTF-8
+encoding//src/com/personalinfo/dto/Contact.java=UTF-8
+encoding//src/com/personalinfo/dto/Diary.java=UTF-8
+encoding//src/com/personalinfo/dto/Finance.java=UTF-8
+encoding//src/com/personalinfo/dto/Memorandum.java=UTF-8
+encoding//src/com/personalinfo/dto/User.java=UTF-8
+encoding//src/com/personalinfo/servlet/ContactServlet.java=UTF-8
+encoding//src/com/personalinfo/servlet/UserServlet.java=UTF-8
+encoding//src/com/personalinfo/tools/DBcon.java=UTF-8
