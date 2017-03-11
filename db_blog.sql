@@ -62,7 +62,7 @@ CREATE TABLE `blog` (
 
 /*!40000 ALTER TABLE `blog` DISABLE KEYS */;
 LOCK TABLES `blog` WRITE;
-INSERT INTO `blog` VALUES (1,'admin','123456','中文','abcdef@email.com','image/default.jpg',1),(2,'admin1','admin1','write','nihao@163.com','image/default.jpg',1);
+INSERT INTO `blog` VALUES (1,'admin','123456','中文','abcdef@email.com','image/default.jpg',1);
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `blog` ENABLE KEYS */;
 
