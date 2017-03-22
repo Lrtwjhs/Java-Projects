@@ -1,14 +1,14 @@
-#JSPBLOG
+# JSPBLOG
 A simple blog written and developed by Lrtwjhs.
 
-##INTRODUCTION
+## INTRODUCTION
 - JSP + Severlet + javabean.
 - Use Mysql server as the Database.
 - Duoshuo as the comment system.
 - Use HTML5 as the Markup Language.
 - Using bootstrap framework.
 
-##INSTALL
+## INSTALL
 1. First, import the db_blog.sql script into Mysql
 2. Second, copy the Blog/WebRoot file into your webapps subdirectory of your tomcat installation (Mine is at /usr/local/tomcat/webapps)
 3. Restart Tomcat 
