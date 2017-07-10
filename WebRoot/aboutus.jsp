@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>About·Lrtwjhs</title>
-<meta name="keywords" content="" />
+<meta name="keywords" content="" />+++++++
 <meta name="description" content="" />
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 <%@include file="head.jsp"  %>

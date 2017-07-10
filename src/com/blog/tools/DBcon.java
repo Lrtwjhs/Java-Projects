@@ -12,10 +12,10 @@ import java.util.Properties;
 
 /**
  * <p>
- * Title:Êı¾İÁ´½ÓÀà
+ * Title:æ•°æ®é“¾æ¥ç±»
  * </p>
  * <p>
- * Description:´¦ÀíÊı¾İ¿âµÄÁ´½ÓÎÊÌâ
+ * Description:å¤„ç†æ•°æ®åº“çš„é“¾æ¥é—®é¢˜
  * </p>
  * <p>
  * Copyright: Copyright (c) 2009
@@ -30,20 +30,20 @@ import java.util.Properties;
 public class DBcon {
 	
 	/**
-	 * ´Ó»·¾³·µ»ØÁ¬½Ó¶ÔÏó
+	 * ä»ç¯å¢ƒè¿”å›è¿æ¥å¯¹è±¡
 	 * @return connection
 	 * @throws SQLException
 	 */
 
-	// jdbcÁ¬½Ó
+	// jdbcè¿æ¥
 	public synchronized Connection getConnection() {
 		Connection conn = null;
-		String connect = "";// ¿âÃû
-		String user = ""; // ÓÃ»§Ãû
-		String password = ""; // ÃÜÂë
+		String connect = "";// åº“å
+		String user = ""; // ç”¨æˆ·å
+		String password = ""; // å¯†ç 
 		String driver = "";
 
-		// ¶ÁÅäÖÃÎÄ¼ş»ñµÃÊı¾İ¿âÁ¬½Ó²ÎÊı
+		// è¯»é…ç½®æ–‡ä»¶è·å¾—æ•°æ®åº“è¿æ¥å‚æ•°
 		InputStream is = getClass().getResourceAsStream("db.properties");
 		Properties dbProps = new Properties();
 		try {
@@ -54,7 +54,7 @@ public class DBcon {
 			user = dbProps.getProperty("user");
 			password = dbProps.getProperty("password");
 		} catch (IOException e) {
-			// TODO ×Ô¶¯Éú³É catch ¿é
+			// TODO è‡ªåŠ¨ç”Ÿæˆ catch å—
 			System.out.println("DBCon():read db.properties error"
 					+ e.getMessage());
 		}

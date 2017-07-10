@@ -42,7 +42,7 @@ CREATE TABLE `article` (
 
 /*!40000 ALTER TABLE `article` DISABLE KEYS */;
 LOCK TABLES `article` WRITE;
-INSERT INTO `article` VALUES (1,'½ñÌìÎÒ×öºÃÁËÒ»¼þÊÂÇé','½ñÌìÎÒ×öºÃÁËÒ»¼þÊÂÇé£¬Ò»¼þºÜ¿áµÄÊÂÇé¡£','2011-01-03 00:00:00',1,1),(2,'ÄãÔÚËûÏç»¹ºÃÂð£¿','Äã»¹ºÃÂð?ÎÊºòÄãÒ»¾ä¡£','2011-01-03 00:00:00',1,3),(3,'ÄãºÃ£¬Ê±¼ä','ÄãºÃÊÀ½çÎÒµÄÊ±¼ä¡£','2011-01-03 00:00:00',2009,3),(4,'ÎÒºÜºÃ','ÎÒºÜºÃ','2011-01-03 00:00:00',1,1),(5,'ÖÐ¹ú£¬ÄãºÃ','ÖÐ¹ú£¬ÄãºÃ','2011-01-03 00:00:00',1,1);
+INSERT INTO `article` VALUES (1,'ä»Šå¤©æˆ‘åšå¥½äº†ä¸€ä»¶äº‹æƒ…','ä»Šå¤©æˆ‘åšå¥½äº†ä¸€ä»¶äº‹æƒ…ï¼Œä¸€ä»¶å¾ˆé…·çš„äº‹æƒ…ã€‚','2011-01-03 00:00:00',1,1),(2,'ä½ åœ¨ä»–ä¹¡è¿˜å¥½å—ï¼Ÿ','ä½ è¿˜å¥½å—?é—®å€™ä½ ä¸€å¥ã€‚','2011-01-03 00:00:00',1,3),(3,'ä½ å¥½ï¼Œæ—¶é—´','ä½ å¥½ä¸–ç•Œæˆ‘çš„æ—¶é—´ã€‚','2011-01-03 00:00:00',2009,3),(4,'æˆ‘å¾ˆå¥½','æˆ‘å¾ˆå¥½','2011-01-03 00:00:00',1,1),(5,'ä¸­å›½ï¼Œä½ å¥½','ä¸­å›½ï¼Œä½ å¥½','2011-01-03 00:00:00',1,1);
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `article` ENABLE KEYS */;
 
@@ -69,7 +69,7 @@ CREATE TABLE `blog` (
 
 /*!40000 ALTER TABLE `blog` DISABLE KEYS */;
 LOCK TABLES `blog` WRITE;
-INSERT INTO `blog` VALUES (1,'admin','123456','ÖÐÎÄ','abcdef@email.com','image/default.jpg',1),(2,'admin1','admin1','write','nihao@163.com','image/default.jpg',1);
+INSERT INTO `blog` VALUES (1,'admin','123456','ä¸­æ–‡','abcdef@email.com','image/default.jpg',1),(2,'admin1','admin1','write','nihao@163.com','image/default.jpg',1);
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `blog` ENABLE KEYS */;
 
@@ -95,7 +95,7 @@ CREATE TABLE `feedback` (
 
 /*!40000 ALTER TABLE `feedback` DISABLE KEYS */;
 LOCK TABLES `feedback` WRITE;
-INSERT INTO `feedback` VALUES (1,'²»´í²»´í','Ð´µÄºÜºÃÑ½','2011-01-04 15:30:30',1,'127.0.0.1'),(2,'ÄãºÃ','<FONT color=#ffff00>×öµÄ ²»´íÑ½£¡<BR></FONT>','2011-01-04 15:30:30',1,'127.0.0.1'),(3,'ÄãºÃ','ÍùÍùÍùÍù<BR>','2011-01-04 15:30:30',2,'127.0.0.1'),(4,'±±·½µÄÀÇ','<BR><FONT color=#ff6633>¿´ÁË²»´íÅ¶£¡</FONT>','2011-01-04 15:30:30',1,'127.0.0.1'),(5,'±±·½µÄÀÇ','<BR><FONT color=#ff6633>¿´ÁË²»´íÅ¶£¡</FONT>','2011-01-04 15:30:30',1,'127.0.0.1'),(6,'ÄÏÎÞ·ð','ÎÒºÜºÃ£¬Ð»Ð»<BR>','2011-01-12 14:29:40',5,'127.0.0.1');
+INSERT INTO `feedback` VALUES (1,'ä¸é”™ä¸é”™','å†™çš„å¾ˆå¥½å‘€','2011-01-04 15:30:30',1,'127.0.0.1'),(2,'ä½ å¥½','<FONT color=#ffff00>åšçš„ ä¸é”™å‘€ï¼<BR></FONT>','2011-01-04 15:30:30',1,'127.0.0.1'),(3,'ä½ å¥½','å¾€å¾€å¾€å¾€<BR>','2011-01-04 15:30:30',2,'127.0.0.1'),(4,'åŒ—æ–¹çš„ç‹¼','<BR><FONT color=#ff6633>çœ‹äº†ä¸é”™å“¦ï¼</FONT>','2011-01-04 15:30:30',1,'127.0.0.1'),(5,'åŒ—æ–¹çš„ç‹¼','<BR><FONT color=#ff6633>çœ‹äº†ä¸é”™å“¦ï¼</FONT>','2011-01-04 15:30:30',1,'127.0.0.1'),(6,'å—æ— ä½›','æˆ‘å¾ˆå¥½ï¼Œè°¢è°¢<BR>','2011-01-12 14:29:40',5,'127.0.0.1');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `feedback` ENABLE KEYS */;
 
@@ -119,7 +119,7 @@ CREATE TABLE `links` (
 
 /*!40000 ALTER TABLE `links` DISABLE KEYS */;
 LOCK TABLES `links` WRITE;
-INSERT INTO `links` VALUES (1,'ÍøÖ·µ¼º½','http://www.hao123.com',1),(3,'°Ù¶È','www.baidu.com',1),(4,'google','www.google.com',1);
+INSERT INTO `links` VALUES (1,'ç½‘å€å¯¼èˆª','http://www.hao123.com',1),(3,'ç™¾åº¦','www.baidu.com',1),(4,'google','www.google.com',1);
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `links` ENABLE KEYS */;
 
@@ -142,7 +142,7 @@ CREATE TABLE `sort` (
 
 /*!40000 ALTER TABLE `sort` DISABLE KEYS */;
 LOCK TABLES `sort` WRITE;
-INSERT INTO `sort` VALUES (1,'¸öÈËÈÕ¼Ç',1),(3,'¸öÈË²©¿Í',1);
+INSERT INTO `sort` VALUES (1,'ä¸ªäººæ—¥è®°',1),(3,'ä¸ªäººåšå®¢',1);
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `sort` ENABLE KEYS */;
 
