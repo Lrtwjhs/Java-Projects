@@ -62,29 +62,14 @@
 		<div class="post">	
     <div class="about">
 			<h2 class="title"><%=title %></h2>
-			<p class="byline"><small><%=time %> </small><small>by   admin</small></p>
+			<p class="byline"><small><%=time %> </small></p>
 			</div>
 				<p> <%=content %></p>				
 				
       </br>
       </br>
 
-<!-- 多说评论框 start -->
-  <div class="ds-thread" data-thread-key="" data-title="<%=title %>" data-url=""></div>
-<!-- 多说评论框 end -->
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"javawebtest"};
-  (function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';ds.async = true;
-    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0] 
-     || document.getElementsByTagName('body')[0]).appendChild(ds);
-  })();
-  </script>
-<!-- 多说公共JS代码 end -->
+            <%@include file="comment.jsp" %>
 
 			</div> 	
 		</div>
@@ -92,38 +77,6 @@ var duoshuoQuery = {short_name:"javawebtest"};
 		<!-- end page -->
 </div>
 
-
-
-
-    <!--注释原评论>
-		<div class="post">	
-    <p class="meta"><a href="#" class="more">网友评论</a></p>
-		     <%=list_con %>						
-			 	
-		</div>
-		  <div class="post">	
-      <p class="meta"><a href="#" class="more"> 发布评论</a></p>
-		       <div class="entry">
-				  <p>
-	     <form  action="feedback" method="post"> 
-	      <li>  昵称：
-           <input  type="hidden" id="articleid" name="articleid" value="<%=id %>" >
-           <input  type="hidden" id="pubtime" name="pubtime" value="<%=nowdate %>" >
-           <input type='hidden' name = "action" value="add">
-           <input type='text' name = "uname" value=""> 
-           </li>           
-        <li>
-                      内容：<textarea    style="width:520px;height:155px"  name="content" id='content'></textarea>
-        </li>           
-        <li> <input type="submit" value="提交" name="Submit"> </li>
-				  </form>
-				  </p>				
-			   </div>	
-			</div>				
-	</div>
-
-</div>
- -->
 
 <div class="yw"></div>
 <%@include file="bottom.jsp" %>

@@ -32,7 +32,7 @@
 <div class="header-title">
 <div class="header-title-wrapper">
 <div class="avatar">
-<img src="/images/user.png">
+<img src="images/user.png">
 </div>
 <h1>Lrtwjhs</h1>
 <p class="meta">An interesting place to discover</p>

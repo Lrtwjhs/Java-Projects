@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="blog">
+    <output-path>$PROJECT_DIR$/WebRoot/WEB-INF/classes</output-path>
+    <root id="root">
+      <element id="module-output" name="Blog" />
+    </root>
+  </artifact>
+</component>
