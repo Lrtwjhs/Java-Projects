@@ -8,7 +8,7 @@ import java.util.*;
 import static cn.ineffable.algorithm.OperatorComparator.compareOperator;
 
 /**
- * Created by lrtwjhs on 2017/12/6.
+ * Created by lrtwjhs on 2018/6/19.
  */
 
 public class Calculator {
@@ -25,7 +25,7 @@ public class Calculator {
 
             Unit unit = units.get(index);
             if (unit.getType() == Unit.Type.OPERAND) {
-                operators.push(unit);
+                operands.push(unit);
                 Debug.debug(unit + "push");
                 index += 1;
             } else {

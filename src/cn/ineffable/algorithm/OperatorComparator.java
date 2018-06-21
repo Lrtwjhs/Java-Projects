@@ -1,7 +1,7 @@
 package cn.ineffable.algorithm;
 
 /**
- * Created by lrtwjhs on 2017/12/6.
+ * Created by lrtwjhs on 2018/6/19.
  */
 
 public class OperatorComparator {
